@@ -1,0 +1,41 @@
+AppBundle\Entity\Product:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\ProductRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        brand:
+            type: string
+            length: '50'
+            unique: true
+        categoryId:
+            type: integer
+        price:
+            type: integer
+        dateCreated:
+            type: date
+        description:
+            type: string
+            length: 255
+            nullable: true
+        discount:
+            type: integer
+            nullable: true
+        status:
+            type: string
+            length: '50'
+        imageLink:
+            type: string
+            length: '255'
+        imageLink1:
+            type: string
+            length: '255'
+        imageLink2:
+            type: string
+            length: '255'
+    lifecycleCallbacks: {  }

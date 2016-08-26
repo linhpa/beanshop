@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+{% include 'nav/nav.html.twig' %}
+{% include 'banner/product_banner.html.twig' %}
+		
+			<div class="contact">
+					
+				<div class="contact-form">
+					<div class="container">
+					<div class="col-md-6 contact-left">
+						<h3>At vero eos et accusamus et iusto odio dignissimos ducimus qui </h3>
+						<p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. </p>
+					
+			
+					<div class="address">
+					<div class=" address-grid">
+							<i class="glyphicon glyphicon-map-marker"></i>
+							<div class="address1">
+								<h3>Address</h3>
+								<p>56 Hoang Dieu 2,
+								Thu Duc District, HCM City, Vietnam</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class=" address-grid ">
+							<i class="glyphicon glyphicon-phone"></i>
+							<div class="address1">
+							<h3>Our Phone:<h3>
+								<p>+84 122 359 5253</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class=" address-grid ">
+							<i class="glyphicon glyphicon-envelope"></i>
+							<div class="address1">
+							<h3>Email:</h3>
+								<p><a href="mailto:linh.phan@dirox.net"> linh.phan@dirox.net</a></p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class=" address-grid ">
+							<i class="glyphicon glyphicon-bell"></i>
+							<div class="address1">
+								<h3>Open Hours:</h3>
+								<p>Monday-Friday, 7AM-5PM</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+</div>
+				</div>
+				<div class="col-md-6 contact-top">
+					<h3>Want to work with me?</h3>
+					<form>
+						<div>
+							<span>Your Name </span>		
+							<input type="text" value="" >						
+						</div>
+						<div>
+							<span>Your Email </span>		
+							<input type="text" value="" >						
+						</div>
+						<div>
+							<span>Subject</span>		
+							<input type="text" value="" >	
+						</div>
+						<div>
+							<span>Your Message</span>		
+							<textarea> </textarea>	
+						</div>
+						<label class="hvr-skew-backward">
+								<input type="submit" value="Send" >
+						</label>
+</form>						
+				</div>
+		<div class="clearfix"></div>
+		</div>
+		</div>
+
+	</div>
+
+<!--//contact-->
+<!--brand-->
+		{% include 'footer/brand.html.twig' %}
+			<!--//brand-->
+			</div>
+			
+		</div>
+	<!--//content-->
+	<!--//footer-->
+	{% include 'footer/footer.html.twig' %}
+
+	{% endblock %}

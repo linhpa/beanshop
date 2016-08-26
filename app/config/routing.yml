@@ -1,0 +1,34 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+home_page:
+    path: /home
+    defaults:
+      _controller: AppBundle:Default:index
+product_detail:
+    path: /product/{productBrand}
+    defaults: { _controller: AppBundle:Product:detail }
+product_filter:
+    path: /category/{productCategory}
+    defaults: { _controller: AppBundle:Filter:filter }
+contact:
+    path: /contact
+    defaults:
+      _controller: FrameworkBundle:Template:template
+      template: default/contact.html.twig
+login:
+    path: /login
+    defaults: 
+      _controller: AppBundle:User:login
+logout:
+    path: /logout
+    defaults:
+      _controller: AppBundle:User:logout
+register:
+    path: /register
+    defaults:
+      _controller: FrameworkBundle:Template:template
+      template: default/register.html.twig
+registerHandle:
+    path: /registerHandle
+    defaults: { _controller: AppBundle:User:registerHandle }

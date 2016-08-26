@@ -1,0 +1,44 @@
+AppBundle\Entity\Orders:
+    type: entity
+    table: orders
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        userId:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: user_id
+        productId:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: product_id
+        orderDate:
+            type: date
+            nullable: false
+            column: order_date
+        qty:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        description:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        status:
+            type: binary
+            nullable: false
+    lifecycleCallbacks: {  }
